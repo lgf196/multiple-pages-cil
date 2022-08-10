@@ -41,8 +41,12 @@ module.exports = {
         use: [
           MiniCssExtractPlugin.loader,
           'css-loader',
+          'sass-loader',
           {
-            loader: 'sass-loader',
+            loader: 'sass-resources-loader',
+            options: {
+              resources: [path.resolve(__dirname, '../src/style/variable.scss')],
+            },
           },
         ],
       },
