@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/static/mini-ui/scripts/boot.js"></script>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <!--Layout-->
+    <div id="layout1" class="mini-layout" style="width: 100%; height: 100%">
+        <div class="app-header" region="north" height="70" showSplit="false" showHeader="false">
+            <h1 style="
+            margin: 0;
+            padding: 15px;
+            cursor: default;
+            font-family: 微软雅33黑, 黑体, 宋体;
+          ">
+                XXX应用管理系统 V4
+            </h1>
+            <div style="position: absolute; top: 18px; right: 10px">
+                <a class="mini-button mini-button-iconTop" iconCls="icon-add" onclick="onQuickClick" plain="true">快捷</a
+          >
+          <a id="h2">
+            <a href="/pages/about.html">3333333333</a>
+                </a>
+                <a class="mini-button mini-button-iconTop" iconCls="icon-edit" onclick="onClick" plain="true">首页</a
+          >
+          <a
+            class="mini-button mini-button-iconTop"
+            iconCls="icon-date"
+            onclick="onClick"
+            plain="true"
+            >消息</a
+          >
+          <a
+            class="mini-button mini-button-iconTop"
+            iconCls="icon-edit"
+            onclick="onClick"
+            plain="true"
+            >设置</a
+          >
+          <a
+            class="mini-button mini-button-iconTop"
+            iconCls="icon-close"
+            onclick="onClick"
+            plain="true"
+            >关闭</a
+          >
+        </div>
+      </div>
+      <div
+        title="south"
+        region="south"
+        showSplit="false"
+        showHeader="false"
+        height="30"
+      >
+        <div style="line-height: 28px; text-align: center; cursor: default">
+          Copyright © 上海普加软件有限公司版权所有
+        </div>
+      </div>
+      <div
+        title="center"
+        region="center"
+        style="border: 0"
+        bodyStyle="overflow:hidden;"
+      >
+        <!--Splitter-->
+        <div
+          class="mini-splitter"
+          style="width: 100%; height: 100%"
+          borderStyle="border:0;"
+        >
+          <div
+            size="180"
+            maxSize="250"
+            minSize="100"
+            showCollapseButton="true"
+            style="border: 0"
+          >
+            <!--OutlookTree-->
+            <div
+              id="leftTree"
+              class="mini-outlooktree"
+              onnodeclick="onNodeSelect"
+              textField="text"
+              idField="id"
+              parentField="pid"
+            ></div>
+          </div>
+          <div showCollapseButton="false" style="border: 0">
+            <!--Tabs-->
+            <div
+              id="mainTabs"
+              class="mini-tabs"
+              activeIndex="2"
+              style="width: 100%; height: 100%"
+              plain="false"
+              onactivechanged="onTabsActiveChanged"
+            >
+              <!-- <div title="首页" url="../../docs/api/overview.html"></div>
+              <div title="子页面关闭" url="../tabs/pages/page1.html"></div>
+              <div title="弹出面板" url="../datagrid/datagrid.html"></div>
+              <div title="弹出面板" url="../datagrid/fixedcolumns.html"></div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

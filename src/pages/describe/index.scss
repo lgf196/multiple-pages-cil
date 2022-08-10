@@ -1,0 +1,5 @@
+@import '@/style/variable.scss';
+#h2 {
+    background: $bgColor;
+    @include style(30px, red);
+}
